@@ -218,7 +218,10 @@ Currently, our ToonCrafter can support generating videos of up to 16 frames with
 ```bash
 conda create -n tooncrafter python=3.8.5
 conda activate tooncrafter
-pip install -r requirements.txt
+
+# For H100 GPUs
+conda install pytorch==2.3.0 torchvision==0.18.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install pytorch-lightning
 ```
 
 
