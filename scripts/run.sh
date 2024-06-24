@@ -23,6 +23,6 @@ CUDA_VISIBLE_DEVICES=0 python3 scripts/evaluation/inference.py \
 --ddim_eta 1.0 \
 --prompt_dir $prompt_dir \
 --text_input \
---video_length 16 \
+--video_length 3 \
 --frame_stride ${FS} \
 --timestep_spacing 'uniform_trailing' --guidance_rescale 0.7 --perframe_ae --interp
